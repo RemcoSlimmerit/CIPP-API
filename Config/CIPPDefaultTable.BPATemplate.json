@@ -1,5 +1,5 @@
 {
-  "name": "CIPP Best Practices v1.5 - Table view",
+  "name": "CIPP Best Practices v1.0 - Table view",
   "style": "Table",
   "Fields": [
     {
@@ -172,21 +172,19 @@
       "FrontendFields": [
         {
           "name": "Current Secure Score",
-          "value": "CurrentSecureScore.currentScore / CurrentSecureScore.maxScore * 100",
-          "formatter": "math",
-          "showAs": "percentage"
+          "value": "CurrentSecureScore.currentScore"
+        },
+        {
+          "name": "Max Secure Score",
+          "value": "CurrentSecureScore.maxScore"
         },
         {
           "name": "Average Comparative Score (All Tenants)",
-          "value": "CurrentSecureScore.averageComparativeScores[0].averageScore / CurrentSecureScore.maxScore * 100",
-          "formatter": "math",
-          "showAs": "percentage"
+          "value": "CurrentSecureScore.averageComparativeScores[0].averageScore"
         },
         {
           "name": "Average Comparative Score (Similiar Size Tenants)",
-          "value": "CurrentSecureScore.averageComparativeScores[1].averageScore / CurrentSecureScore.maxScore * 100",
-          "formatter": "math",
-          "showAs": "percentage"
+          "value": "CurrentSecureScore.averageComparativeScores[1].averageScore"
         }
       ]
     }
